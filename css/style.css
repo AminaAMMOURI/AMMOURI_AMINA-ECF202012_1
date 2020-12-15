@@ -7,15 +7,14 @@ body {
 }
 
 #header {
-    display: flex;
+    display: flex; /*alignement horizontal du logo et du lien sur le header*/
 }
 
-#nav {
+#nav { /*fond dégradé pour la barre de navigation*/
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,110,0) 43%, rgba(0,212,255,1) 100%);
     padding: 0 30% 0  43%;
     margin: 0 1% 0 1%;  
-    position: relative;
 }
 
 #logo {
@@ -24,12 +23,9 @@ body {
 }
 
 #pageFavoris {
-    color: white;
-    text-decoration: none;
-    margin-left: 30%;
-    align-items: center; /*centre verticalement*/
-    position: absolute;
-    text-align: center;
+    color: white; /*couleur du texte*/
+    font-size: 2em; /*taille du texte*/
+    text-decoration: none; /*enlève le soulignement du lien*/
 }
 
 h1 {
@@ -45,42 +41,42 @@ h2 {
     text-decoration: underline; /*soulignement*/
 }
 
-#listeRecherche {
+#listeRecherche { /*position de la phrase "mes recherches récentes"*/
     padding: 0 10em 2em 2em; 
 }
 
 ul {
-    list-style: none;
+    list-style: none; /*supprime les bulettes des listes*/
 }
 
-#dégradé {
+#dégradé { /*fond dégradé pour la liste de chanteurs*/
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,110,0) 43%, rgba(0,212,255,1) 100%);
     padding: 0 30% 0  43%;
     margin: 0 1% 0 1%;
 }
 
-.footer {
-    display: flex;
-    justify-content: space-between;
+.footer { /*pied de page*/
+    display: flex; /*allignement horizontal de la liste*/
+    justify-content: space-between; /*espace entre les éléments*/
     margin-top: 5em;
     padding-right: 3em;
     padding-bottom: 1em;
 }
 
-#recherche {
-    display: flex;
-    justify-content: space-between;
+#recherche { /*concerne les deux barres de recherches*/
+    display: flex; /*alignement des deux barres de recherche*/
+    justify-content: space-between; /*espacement entre les deux barres de recherche*/
     margin-left: 20% 0 0 20%;
     padding: 0 20% 0 20%;
 }
 
-.recherche {
+.recherche { /*centre le texte à l'intérieur de la barre de recherche*/
     text-align: center;
 }
 
 img {
-    border-radius: 10%;
+    border-radius: 10%; /*ajout d'une bordure sur toutes les images*/
     border-style: groove;
     border-color: whitesmoke;
     box-shadow: whitesmoke;
@@ -91,38 +87,237 @@ img {
     margin: 10%; /*marge haut droite bas et gauche*/
     justify-content: space-between; /*espace entre les boutons*/
 }
-i{
-    font-size: 2rem; /*taille des icônes fontawesome*/
+i {
+    font-size: 3rem; /*taille des icônes font awesome*/
   }
 
-/*#button:hover {
+i:hover{
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 20px #2196f3, 0 0 60px #2196f3, 0 0 100px #2196f3;
-    transition-delay: 1s;
-} /*Pour que le visiteur ne manque pas les boutons : fond lumineux lorsqu'on passe sur la ligne des boutton*/
+} /*Pour que le visiteur ne manque pas les boutons : fond lumineux lorsqu'on passe la souris sur les boutons*/
 
-/*#referenceButton {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 0%;
-    padding-top: 0%;
-}*/
-
+/******************************GRID******************************/
 .grille {
-     max-width: 1300px;
+     max-width: 1300px; /*largeur maximal*/
      width: 80%; /*dès que 80% de la largeur du body est inférieur à 1300px, ça commence à rétraircir*/
-     height: auto;
+     height: auto; /*hauteur*/
      margin: 13px auto;
      grid-template-columns: repeat(auto-fill, 300px);
-     justify-content: center;
-     opacity: 80%;
-     margin-left: 17%;
+     justify-content: center; /*centrer*/
+     opacity: 80%; /*transparence des images*/
+     margin-left: 17%; /*marge à gauche*/
 }
 /*on crée le nombre de colonnes avec grid template columns. Auto-fill me permet de mettre autant de colonnes que la grille peut en prendre en fonction de la taille qu'elle a, en ce qui nous concerne ça sera 4 colonnes de 300px.*/
 
 .grid-item {
-     width: 300px;
-     height: 200px;
+     width: 300px; /*largeur des images*/
+     height: 200px; /*hauteur des images*/
 }
+
+/*********************MEDIAQUERIES***********************/
+@media (max-width:768px){
+     #recherchesRecentes {
+         margin-left: 30%; /*lorsque l'écran atteindre au maximum 768px, le texte cyblé par l'id sera décalé à droite à 30% de la taille du body*/
+     }}
+
+
+/******************KEYFRAMES****************/
+#eminem {
+  animation-duration: 500ms; /*durée de l'animation*/
+  animation-name: slidein; /*choix de l'animation*/
+}
+
+@keyframes slidein {
+  from { /*point de départ de l'animation*/
+    margin-left: 2%;
+    width: 10%;
+  }
+  75% {
+    font-size: 10%;
+    margin-left: 2%;
+    width: 15%;
+  }
+
+  to { /*fin de l'animation*/
+    margin-left: 0%;
+    width: 10%;
+  }
+}     
+
+#jenifer {
+    animation-duration: 800ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }     
+
+  #soprano {
+    animation-duration: 1000ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+  #sniper {
+    animation-duration: 1200ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+  #beyonce {
+    animation-duration: 1500ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+  #willy {
+    animation-duration: 1800ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+  #kamaro {
+    animation-duration: 2000ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+  #angele {
+    animation-duration: 2200ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
+
+
+  #fifty {
+    animation-duration: 2500ms;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from { /*point de départ de l'animation*/
+      margin-left: 2%;
+      width: 10%;
+    }
+    75% {
+      font-size: 10%;
+      margin-left: 2%;
+      width: 15%;
+    }
+  
+    to { /*fin de l'animation*/
+      margin-left: 0%;
+      width: 10%;
+    }
+  }  
