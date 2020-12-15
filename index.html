@@ -9,16 +9,17 @@
 <body>
     <!--NAV BAR-->
     <header>
-        <img src="img/logo.jpg" id="logo" alt="logo">
-        <nav>
-           <h1>MY MUSIC</h1> 
-        </nav>
-    </header>
+         <nav>
+           <img src="img/logo.jpg" id="logo" alt="logo" href="index.html">
+           <a href="favoris.html">MES ARTISTES PRÉFÉRÉS</a>
+         </nav>
     <!--FIN NAV BAR-->
+        <h1>MY MUSIC</h1> 
+    </header>
     <!--BODY-->
     <main id="body"></div>
     <!--TITRE DU BODY-->
-        <div id="titre">LES ARTISTES</div>
+        <h2>LES ARTISTES</h2>
     <!--FIN TITRE DU BODY-->    
     <!--IMAGES ARTISTES-->
         <section class="grille">
@@ -34,7 +35,7 @@
         </section>
     <!--FIN IMAGES ARTISTES-->
     <!--LISTE DES DERNIERES RECHCERCHES EFFECTUEES SUR LE SITE-->
-        <section>
+        <section id="dégradé">
             <div id="recherchesRecentes">Mes recherches récentes</div>
             <ul id="listeRecherche">
                 <li>SOPRANO</li>
@@ -43,21 +44,43 @@
                 <li>ANGELE</li>
                 <li>ONE DIRECTION</li>
                 <li>JENIFER</li>
+                <li>KAMARO</li>
+                <li>CELINE DION</li>
+                <li>SHAKIRA</li>
             </ul>
         </section>
      <!--LISTE DES DERNIERES RECHCERCHES EFFECTUEES SUR LE SITE-->    
      <!--BOUTONS DE RECHERCHE-->
          <section id="button">
+            <i class="fab fa-spotify"></i>
+                <p>Avec deezer</p>
+                <button>GO</button>
+            </div>
+            <div class="musicPlayer">
+                <p>Avec </p>
+                <button>GO</button>
+            </div>
+
              <button>GO</button>
              <button>GO</button>
              <button>GO</button>
              <button>GO</button>
-         </section>
+          </section>
+          <section>
+              <ul id="referenceButton">
+              <li>avec MusiccBrainz</li>
+              <li>avec Spotify</li>
+              <li>avec TuneIn</li>
+              <li>avec Deezer</li>
+            </ul>
+          </section>
      <!--FIN BOUTONS DE RECHERCHE-->
+     <!--ZONE RECHERCHE PAR NOM ET PAR GROUPE DE MUSICIENS-->
         <section id="recherche">
             <input class="recherche" type="text" value="Recherche par nom">
             <input class="recherche" type="text" value="Recherche par groupe">
         </section>
+     <!--FIN ZONE RECHERCHE PAR NOM ET PAR GROUPE DE MUSICIENS-->  
     </main>
     <!--FIN BODY--> 
     <!--FOOTER--> 
