@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>MyMusic</title>
 </head>
 <body>
     <!--NAV BAR-->
-    <header>
-         <nav>
-           <img src="img/logo.jpg" id="logo" alt="logo" href="index.html">
-           <a href="favoris.html">MES ARTISTES PRÉFÉRÉS</a>
-         </nav>
+    <header id="header">
+        <img src="img/logo.jpg" id="logo" alt="logo" href="index.html">
+        <nav id="nav"> 
+           <a id="pageFavoris" href="favoris.html">FAVORIS</a>
+        </nav>
     <!--FIN NAV BAR-->
-        <h1>MY MUSIC</h1> 
     </header>
     <!--BODY-->
     <main id="body"></div>
+        <h1>MY MUSIC</h1> 
     <!--TITRE DU BODY-->
         <h2>LES ARTISTES</h2>
     <!--FIN TITRE DU BODY-->    
@@ -52,27 +53,22 @@
      <!--LISTE DES DERNIERES RECHCERCHES EFFECTUEES SUR LE SITE-->    
      <!--BOUTONS DE RECHERCHE-->
          <section id="button">
-            <i class="fab fa-spotify"></i>
-                <p>Avec deezer</p>
-                <button>GO</button>
+             <div>
+                 <p id="firstButton">avec Spotify</p>
+                 <button><i class="fab fa-spotify"></i></button>
+             </div>
+             <div>
+                 <p id="secondButton">avec MusiccBrainz</p>
+                 <button><i class="fas fa-music"></i></button>
+             </div>
+             <div>
+                 <p id="thirdButton">avec TuneIn</p>
+                 <button><i class="fab fa-itunes"></i></button>
+             </div>
+             <div>
+                 <p id="fourthButton">avec Deezer</p>
+                 <button><i class="fab fa-deezer"></i></button>
             </div>
-            <div class="musicPlayer">
-                <p>Avec </p>
-                <button>GO</button>
-            </div>
-
-             <button>GO</button>
-             <button>GO</button>
-             <button>GO</button>
-             <button>GO</button>
-          </section>
-          <section>
-              <ul id="referenceButton">
-              <li>avec MusiccBrainz</li>
-              <li>avec Spotify</li>
-              <li>avec TuneIn</li>
-              <li>avec Deezer</li>
-            </ul>
           </section>
      <!--FIN BOUTONS DE RECHERCHE-->
      <!--ZONE RECHERCHE PAR NOM ET PAR GROUPE DE MUSICIENS-->

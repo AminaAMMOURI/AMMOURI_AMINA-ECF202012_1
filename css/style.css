@@ -1,32 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 body {
-    background-image: url("..//..//img/background.jpg");
-    background-size: 100%;
-    color: white;
+    background-image: url("..//..//img/background.jpg"); /*image de fond de toute la page*/
+    background-size: 100%; /*l'image prend 100% du body*/
+    color: white; /*la couleur du texte de tout le body, autrement dit de toute la page est le blanc*/
+}
+
+#header {
+    display: flex;
+}
+
+#nav {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,110,0) 43%, rgba(0,212,255,1) 100%);
+    padding: 0 30% 0  43%;
+    margin: 0 1% 0 1%;  
+    position: relative;
 }
 
 #logo {
-    width: 190px;
-	height: 160px;
+    width: 190px; /*largeur du logo*/
+    height: 160px; /*hauteur du logo*/
+}
+
+#pageFavoris {
+    color: white;
+    text-decoration: none;
+    margin-left: 30%;
+    align-items: center; /*centre verticalement*/
+    position: absolute;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 0;
+    text-align: center; /*le titre principal est centré horizontalement par rapport au body*/
+    font-size: 3em; /*taille du texte*/
+    font-family: Arial, Helvetica, sans-serif; /*type de police*/
+    margin: 50px 0; /*marge en haut et à droite*/
 }
 
 h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 1rem;
-    text-decoration: underline;
-}
-
-#recherchesRecentes {
-    padding-top: 9em;
-   
+    font-family: 'Permanent Marker', cursive; /*police d'écriture*/
+    font-size: 2rem; /*taille de la police*/
+    text-decoration: underline; /*soulignement*/
 }
 
 #listeRecherche {
@@ -43,6 +59,7 @@ ul {
     padding: 0 30% 0  43%;
     margin: 0 1% 0 1%;
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -70,25 +87,28 @@ img {
 }
 
 #button {
-    display: flex;
-    margin: 10%;
-    justify-content: space-between;
+    display: flex; /*alignement horizontal*/
+    margin: 10%; /*marge haut droite bas et gauche*/
+    justify-content: space-between; /*espace entre les boutons*/
 }
+i{
+    font-size: 2rem; /*taille des icônes fontawesome*/
+  }
 
-#button:hover {
+/*#button:hover {
     color: #255784;
     background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    box-shadow: 0 0 20px #2196f3, 0 0 60px #2196f3, 0 0 100px #2196f3;
     transition-delay: 1s;
 } /*Pour que le visiteur ne manque pas les boutons : fond lumineux lorsqu'on passe sur la ligne des boutton*/
 
-#referenceButton {
+/*#referenceButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 0%;
     padding-top: 0%;
-}
+}*/
 
 .grille {
      max-width: 1300px;
