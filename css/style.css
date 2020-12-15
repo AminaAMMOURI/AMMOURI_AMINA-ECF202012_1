@@ -8,6 +8,7 @@ body {
 
 #header {
     display: flex; /*alignement horizontal du logo et du lien sur le header*/
+    align-items: center; /*centre verticalement les éléments enfants*/
 }
 
 #nav { /*fond dégradé pour la barre de navigation*/
@@ -120,6 +121,11 @@ i:hover{
      #recherchesRecentes {
          margin-left: 30%; /*lorsque l'écran atteindre au maximum 768px, le texte cyblé par l'id sera décalé à droite à 30% de la taille du body*/
      }}
+
+@media (max-width:768px){
+     #header {
+         display: block; /*lorsque l'écran est réduit avec un maximum de 768px, le lien "favoris" se place en dessous du logo*/
+    }}
 
 
 /******************KEYFRAMES****************/
