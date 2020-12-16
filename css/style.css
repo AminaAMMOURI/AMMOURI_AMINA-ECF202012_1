@@ -83,6 +83,26 @@ img {
     box-shadow: whitesmoke;
 }
 
+#concerts {
+  background-image: url("..//..//img/fondConcerts.jpg");
+}
+
+.margeTop {
+  padding-top: 5em;
+}
+
+#concerts, #bio {
+  margin-right: 30%;
+  margin-left: 30%;
+  text-align: center;
+}
+
+#eminemBiographie {
+  margin-right: 30%;
+  margin-left: 40%;
+  text-align: center;
+}
+
 #button {
     display: flex; /*alignement horizontal*/
     margin: 10%; /*marge haut droite bas et gauche*/
@@ -126,7 +146,6 @@ i:hover{
      #header {
          display: block; /*lorsque l'écran est réduit avec un maximum de 768px, le lien "favoris" se place en dessous du logo*/
     }}
-
 
 /******************KEYFRAMES****************/
 #eminem {
