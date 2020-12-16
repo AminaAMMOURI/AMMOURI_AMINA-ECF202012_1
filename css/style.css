@@ -84,23 +84,22 @@ img {
 }
 
 #concerts {
-  background-image: url("..//..//img/fondConcerts.jpg");
+  background-image: url("..//..//img/fondConcerts.jpg"); /*image de fond pour la liste de concerts*/
 }
 
 .margeTop {
-  padding-top: 5em;
+  padding-top: 5em; /*marge en haut appliquée à plusieurs éléments en html*/
 }
 
-#concerts, #bio {
+#concerts, #bio { /*concerne la liste des concerts*/
   margin-right: 30%;
   margin-left: 30%;
   text-align: center;
 }
 
-#eminemBiographie {
+#eminemBiographie { /*image utilisée pour la bio d'eminem*/
   margin-right: 30%;
   margin-left: 40%;
-  text-align: center;
 }
 
 #button {
@@ -146,6 +145,11 @@ i:hover{
      #header {
          display: block; /*lorsque l'écran est réduit avec un maximum de 768px, le lien "favoris" se place en dessous du logo*/
     }}
+
+@media (max-width:768px){
+     #eminemBiographie {
+         margin-left: 20%; /*lorsque l'écran est réduit avec un maximum de 768px, l'image a une marge à gauche de 20%*/
+    }}    
 
 /******************KEYFRAMES****************/
 #eminem {
