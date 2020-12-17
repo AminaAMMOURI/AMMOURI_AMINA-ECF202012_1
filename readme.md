@@ -1,4 +1,4 @@
-                       Bonne lecture :)
+                            Bonne lecture :
 
 #Création d'un site de musique 100% HTML et CSS
 
