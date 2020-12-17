@@ -1,26 +1,21 @@
 #Création d'un site de musique 100% HTML et CSS
 
-pour mes images, j'ai choisi la convention de nommage camelCase
+Ce site web concerne un projet donné par l'école Simplon. 
 
-Un document écrit, non codé, décrivant les actions et enchaînements prévus (et pas
-forcément encore implémentés) : clic sur bouton, navigation du menu…
+Le premier jour, soit le mercredi 9 décembre :
+
+J'ai commencé le croquis de mon site sur une feuille blanche tout simplement. Cela m'a permis d'avoir les idées plus claires. 
+Ce n'est qu'en suite que j'ai effectué la maquette sur Figma. 
 
 
+Les jours suivants :
 
-Ce qui sera évalué
- La conformité de la maquette livrée avec le rendu HTML
- La présence de documentation
-o La capacité a expliqué ce qui a été fait
- L’utilisation et la conformité des technologies
-o Conformité W3C (https://validator.w3.org/)
-o Conformité CSS3 (https://jigsaw.w3.org/css-validator/)
+J'ai ensuite analyser les choix qui se présentent à moi : 
+-pour mes images, j'ai choisi la convention de nommage camelCase.
+-pour mes images sur l'accueil, j'ai pris de parti d'ajouter une animation css. En effet, j'ai décidé pour se site de mon concentrer sur le CSS et de ne pas utiliser JavaScript pour les animations qui me semble plus simple. Le CSS en revanche, regorge de ressources que je connais pas encore. J'ai ainsi profité de ce devoir pour apprendre davantage le CSS. 
+-J'ai lié ma page Favoris à ma page d'Accueil.
 
-Les informations présentes sur la page « mes artistes » donnent une idée de ce qui est voulu : un ou
-des extraits musicaux de chaque artiste présentés, là encore on attend des propositions de votre
-part.
-Monsieur et Madame Skeud sont ouverts aux propositions, vous pouvez proposer un modèle de
-pages statiques offrant davantage de fonctionnalités.
 
-Bonus
-Si vous le souhaitez, vous pouvez intégrer une fonctionnalité en JavaScript (ECMA Script6) chargée
-d’intégrer à la page Web un flux d’information utilisant la Notation Objet JavaScript (JSON).
+Le dernier jour, soit le fameux jeudi 17 décembre :
+
+J'ai utilisé le lien suivant de ma Github page : https://aminaammouri.github.io/AMMOURI_AMINA-ECF202012_1/ sur les sites (https://validator.w3.org/) et (https://jigsaw.w3.org/css-validator/) afin de vérifier la conformité de mon code. 

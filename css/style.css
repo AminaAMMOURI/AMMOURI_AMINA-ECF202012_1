@@ -68,7 +68,6 @@ ul {
 #recherche { /*concerne les deux barres de recherches*/
     display: flex; /*alignement des deux barres de recherche*/
     justify-content: space-between; /*espacement entre les deux barres de recherche*/
-    margin-left: 20% 0 0 20%;
     padding: 0 20% 0 20%;
 }
 
@@ -80,7 +79,6 @@ img {
     border-radius: 10%; /*ajout d'une bordure sur toutes les images*/
     border-style: groove;
     border-color: whitesmoke;
-    box-shadow: whitesmoke;
 }
 
 #concerts {
@@ -103,12 +101,12 @@ img {
 }
 
 #button {
-    display: flex; /*alignement horizontal*/
-    margin: 10%; /*marge haut droite bas et gauche*/
-    justify-content: space-between; /*espace entre les boutons*/
+  display: flex; /*alignement horizontal*/
+  margin: 10%; /*marge haut droite bas et gauche*/
+  justify-content: space-between; /*espace entre les boutons*/
 }
 i {
-    font-size: 3rem; /*taille des icônes font awesome*/
+  font-size: 3rem; /*taille des icônes font awesome*/
   }
 
 i:hover{
@@ -206,6 +204,7 @@ i:hover{
       margin-left: 2%;
       width: 10%;
     }
+
     75% {
       font-size: 10%;
       margin-left: 2%;
@@ -350,3 +349,31 @@ i:hover{
       width: 10%;
     }
   }  
+
+  .conteneur {
+    position: relative; /* Pour que l'aperçu se positionne correctement par rapport à son contenur */
+    display: inline-block; /* Pour que le conteneur fasse bien la taille de son contenu et pas plus */
+}
+
+/* On affiche l'aperçu au survol du conteneur */
+.conteneur:hover .apercu {
+    display: block;
+}
+
+/* Petit design vite fait du contenu */
+.contenu {
+    width: 50px;
+    height: 50px;
+    background: blue;
+}
+
+/* Positionnement et design de l'aperçu */
+.apercu {
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    display: none;
+    width: 40px;
+    height: 20px;
+    background: red;
+}
