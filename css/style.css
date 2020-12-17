@@ -70,6 +70,9 @@ ul {
     justify-content: space-between; /*espacement entre les deux barres de recherche*/
     padding: 0 20% 0 20%;
 }
+h6 {
+  font-size: 16px; /*taille de la police du h6*/
+}
 
 .recherche { /*centre le texte à l'intérieur de la barre de recherche*/
     text-align: center;
@@ -98,6 +101,12 @@ img {
 #eminemBiographie { /*image utilisée pour la bio d'eminem*/
   margin-right: 30%;
   margin-left: 40%;
+}
+
+#actu {
+  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
 }
 
 #button {
@@ -176,7 +185,7 @@ i:hover{
     animation-duration: 800ms;
     animation-name: slidein;
   }
-  
+
   @keyframes slidein {
     from { /*point de départ de l'animation*/
       margin-left: 2%;
